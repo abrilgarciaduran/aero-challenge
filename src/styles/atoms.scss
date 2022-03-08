@@ -1,0 +1,207 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&display=swap');
+
+// Utilities
+$neutral-900: #252F3D;
+$neutral-600: #7C899C;
+$neutral-500: #8FA3BF;
+$neutral-300: #252F3D;
+$neutral-200: #E6EDF7;
+$neutral-100: #F5F9FF;
+$neutral-0: #FFF;
+
+$brand-gradient: -webkit-linear-gradient(102.47deg, #176FEB -5.34%, #FF80FF 106.58%);
+$brand-gradient-hover: -webkit-linear-gradient(102.47deg, #1667D9 -5.34%, #F279F2 106.58%);
+$brand-light: #E5F0FF;
+$brand-light-2: #CCE1FF;
+$illustration-bg: -webkit-linear-gradient(102.47deg, #7296EB -5.34%, #EAC0E9 106.58%, #EAC0E9 106.58%);
+$section-bg: -webkit-linear-gradient(102.47deg, rgba(23, 111, 235, 0.5) -5.34%, rgba(255, 128, 255, 0.5) 106.58%);
+$aerolab: -webkit-linear-gradient(180deg, #FF8800 0%, #FF6600 100%);
+$brand-blue: #176FEB;
+
+$green: #29CC74;
+$green-light: #CCFFE3;
+$red: #E07F4F;
+$red-light: #FFDFD9;
+
+// Quarks
+.App {
+    color: $neutral-900;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+h1 {
+    font-size: 200px;
+    font-weight: 900;
+    line-height: 160px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 38.4px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 25.6px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+p.p-all-caps {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+p.p-light-weight {
+    font-weight: 500;
+}
+
+p.p-small {
+    font-size: 14px;
+}
+
+p.p-small-all-caps {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.brand-gradient {
+    background: $brand-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brand-blue {
+    color: $brand-blue;
+}
+
+.icon {
+    height: 24px;
+}
+
+// Mobile
+@media (max-width: 768px) {
+    h1 {
+        font-size: 96px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    p.p-small {
+        font-size: 12px;
+    }
+
+    .icon {
+        height: 20px;
+        width: 20px;
+    }
+}
+.neutral-600 {
+    color: $neutral-600;
+}
+
+// Atoms & states
+.cta {
+    background: $brand-gradient;
+    padding: 16px 57px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 16px;
+    color: $neutral-0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+};
+.cta-disabled {
+    background: $neutral-200;
+    color: $neutral-600;
+};
+.cta-landing {
+    padding: 26px 40px;
+    text-transform: uppercase;
+    border-radius: 24px;
+    &:hover {
+        background-image: $brand-gradient-hover
+    }
+};
+.cta-is-hoverable:hover {
+    background-image: $brand-gradient-hover
+}
+.cta-sort {
+    border-radius: 12px;
+    padding: 8px 24px;
+}
+.cta-not-selectd {
+    background: $brand-light;
+    color: #176FEB;
+};
+.cta-number {
+    border-radius: 12px;
+    padding: 4px 16px;
+};
+
+.aeropay-dropdown {
+    padding: 8px 16px;
+    border: 1px solid #DAE4F2;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+};
+
+// Molecules
+nav {
+    margin: 40px 0 20px 0;
+}
+
+.steps-card {
+    height: 600px;
+    width: 400px;
+    border-radius: 32px;
+    .card-image {
+        margin: 12px;
+        border-radius: 24px 24px 0px 0px;
+        background-image: $brand-gradient
+    }
+};
+.products-card {
+    height: 432px;
+    width: 300px;
+    .card-image {
+        padding: 64px 34px 76px 34px;
+    }
+}
+.background {
+    position: absolute;
+    margin-top: 100px;
+    height: 450px;
+    width: 100%;
+    background-image: $brand-gradient;
+}
+.filters-provisory {
+    height: 60px;
+    width: 100%;
+    background-image: $brand-gradient;
+}
